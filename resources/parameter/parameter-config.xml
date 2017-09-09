@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<switch-power>
+	<brand id="emerson" value="艾默生">
+		<modelNo id="PS48600-2B/50">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="充电时间（min）" unit="m"/>
+			<equalizing_charge_loop show="均充周期（min）" unit="m"/>
+			<transform_equalizing_current show="转均充电流（A）" unit="A"/>
+			<transform_equalizing_capacity show="转均充容量（%）" unit="%"/>
+		</modelNo>
+		<modelNo id="PS48600-2B/50-150A" >
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="充电时间（min）" unit="m"/>
+			<equalizing_charge_loop show="均充周期（min）" unit="m"/>
+		</modelNo>
+		<modelNo id="PS48600-2B150">
+			<equalizing_charge_voltage show="均充电压(V)" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_loop show="均充周期（h）" unit="h"/>
+			<transform_equalizing_current show="转均充电流(C10)" unit="C10"/>
+			<transform_equalizing_capacity show="转均充容量比(%)" unit="%"/>
+		</modelNo>
+		<modelNo id="PS48300-2/30">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="充电时间（min）" unit="m"/>
+			<equalizing_charge_loop show="均充周期（min）" unit="m"/>
+			<transform_equalizing_current show="转均充电流（A）" unit="A"/>
+			<transform_equalizing_capacity show="转均充容量（%）" unit="%"/>
+		</modelNo>
+		<modelNo id="PS2900-2B150">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_loop show="均充周期(h)" unit="h"/>
+			<transform_equalizing_current show="转均充电流（A）" unit="A"/>
+			<transform_equalizing_capacity show="转均充容量比(%)" unit="%"/>
+		</modelNo>
+		<modelNo id="PS48600-3B/2900-x2">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="均充时长（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（h）" unit="h"/>
+			<transform_equalizing_capacity show="转均充容量（%）" unit="%"/>
+		</modelNo>
+		<modelNo id="PS48600-3A/2900-x3">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="均充时长（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（h）" unit="h"/>
+			<transform_equalizing_current show="均浮充转换电流（A）" unit="A"/>
+			<transform_equalizing_capacity show="转均充容量（%）" unit="%"/>
+		</modelNo>
+	</brand>
+	<brand id="ptzj" value="普天洲际">
+		<modelNo id="DUM23-50">
+			<equalizing_charge_voltage show="均充电压值（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压值（v）" unit="V"/>
+			<equalizing_charge_time show="均充持续时间（h）" unit="h"/>
+			<equalizing_charge_loop show="自动均充周期（周）" unit="w"/>
+		</modelNo>
+		<modelNo id="DUM25F06-48/50（600）LV">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="均充限流（A）" unit="A"/>
+			<equalizing_charge_time show="均充时长（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（h）" unit="h"/>
+			<equalizing_voltage_start show="均充启动阀值" unit="V" />
+		</modelNo>
+		<modelNo id="DUM23 48/50（600x）">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="电池充电限流点(A)" unit="A"/>
+			<equalizing_charge_time show="均充时长（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（天）" unit="d"/>
+			<equalizing_voltage_start show="均充启动阀值" unit="V" />
+		</modelNo>
+		<modelNo id="DUM25 48/50（600x）">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="电池充电限流点(A)" unit="A"/>
+			<transform_equalizing_current show="浮充转均充点(A)" unit="A"/>
+			<equalizing_charge_time show="均充持续时间(min)" unit="m"/>
+			<equalizing_charge_loop show="均充周期(天)" unit="d"/>
+		</modelNo>
+	</brand>
+	<brand id="zhd" value="中达">
+		<modelNo id="DUM94A-48/50">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流值" unit="A"/>
+			<equalizing_charge_time show="自动充电时间（h）" unit="h"/>
+			<equalizing_charge_loop show="自动均充周期（月）" unit="月"/>
+		</modelNo>
+	</brand>
+	<brand id="zhdsmk" value="中达—斯米克">
+		<modelNo id="DUM94A">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流值" unit="A"/>
+			<equalizing_charge_time show="持续充电时间（h）" unit="h"/>
+			<equalizing_charge_loop show="自动均充周期（月）" unit="月"/>
+		</modelNo>
+	</brand>
+	<brand id="zhddt" value="中达电通">
+		<modelNo id="MCS3000D">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="持续充电时间（h）" unit="h"/>
+			<equalizing_charge_loop show="自动均充周期（月）" unit="月"/>
+		</modelNo>
+	</brand>
+	<brand id="dly" value="动力源">
+		<modelNo id="DUM-48/50B1">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（A）" unit="A"/>
+			<equalizing_charge_time show="充电时间（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（天）" unit="d"/>
+			<transform_equalizing_current show="转均充电流（A）" unit="A"/>
+		</modelNo>
+		<modelNo id="DUM-48/50H2">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="充电时间（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（天）" unit="d"/>
+			<transform_equalizing_current show="均浮转换（c10）" unit="C10"/>
+		</modelNo>
+	</brand>
+	<brand id="zhx" value="中兴">
+		<modelNo id="ZDUX68 T601V4.1">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="电池限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="充电时间（h）" unit="h"/>
+			<equalizing_charge_loop show="均充周期（天）" unit="d"/>
+		</modelNo>
+	</brand>
+	<brand id="huawei" value="华为">
+		<modelNo id="TP68400B">
+			<equalizing_charge_voltage show="均充电压（v）" unit="V"/>
+			<floating_charge_voltage show="浮充电压（v）" unit="V"/>
+			<charging_current_limiter show="充电限流（C10）" unit="C10"/>
+			<equalizing_charge_time show="均充时长（h）" unit="m"/>
+			<equalizing_charge_loop show="均充周期（周）" unit="w"/>
+		</modelNo>
+	</brand>
+</switch-power>

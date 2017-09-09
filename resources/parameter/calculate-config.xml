@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<shelf-life value="3" />
+	<battery-brand name="风帆"   >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54"/>
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2" />
+	</battery-brand>
+	<battery-brand name="吉天利"  >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54"/>
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2" />
+	</battery-brand>
+	<battery-brand name="利克"  >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54" />
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2" />
+	</battery-brand>
+	<battery-brand name="普天"   >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54"/>
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2" />
+	</battery-brand>
+	<battery-brand name="理士"   >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54"/>
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2" />
+	</battery-brand>
+	<battery-brand name="丰日"   >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54"/>
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2"/>
+	</battery-brand>
+	<battery-brand name="圣阳"   >
+		<equalized-float  shelf-life="in" equalized="56.4" float="54"/>
+		<equalized-float  shelf-life="out" equalized="56.4" float="54.2" />
+	</battery-brand>
+	<battery-brand name="银泰" >
+		<equalized-float  shelf-life="in" equalized="55.2" float="53.5" />
+		<equalized-float  shelf-life="out" equalized="55.5" float="53.8" />
+	</battery-brand>
+	<battery-brand name="双登"   >
+		<equalized-float  shelf-life="in" equalized="55.2" float="53.5"/>
+		<equalized-float  shelf-life="out" equalized="55.5" float="53.8"/>
+	</battery-brand>
+	<battery-brand name="光宇"   >
+		<equalized-float  shelf-life="in" equalized="54" float="53.8"/>
+		<equalized-float  shelf-life="out" equalized="54.5" float="54"/>
+	</battery-brand>
+</root>

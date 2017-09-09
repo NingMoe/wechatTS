@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+	  <display-name>czxk</display-name>
+	  <tlib-version>1.1</tlib-version>
+	  <short-name>czxk</short-name>
+      <uri>http://www.czxkpower.com/tags/czxk</uri>
+      
+	<!-- 生成字典select -->
+	<tag>
+		<name>select</name>
+		<tag-class>com.mcu32.firstq.wechat.util.tag.SelectTag</tag-class>
+		<body-content>empty</body-content>
+		<!--value为默认选中值，为空时则会自动添加  请选择  选项-->
+		<attribute>
+	        <name>value</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <!--dictTypeId为配置子项的ID 此值为必填项 -->
+	    <attribute>
+	        <name>dictTypeId</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	        <name>name</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	        <name>id</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	        <name>onchange</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	    	<name>height</name>
+	    	<required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	</tag>
+	
+	<!--显示字典项  -->
+	<tag>
+		<name>showSelect</name>
+		<tag-class>com.mcu32.firstq.wechat.util.tag.ShowSelect</tag-class>
+		<body-content>empty</body-content>
+		<!--value为默认选中值，为空时则会自动添加  请选择  选项-->
+		<attribute>
+	        <name>value</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <!--dictTypeId为配置子项的ID 此值为必填项 -->
+	    <attribute>
+	        <name>dictTypeId</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	</tag>
+
+	
+</taglib>

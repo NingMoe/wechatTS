@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapper>
+	<robot name="9090" domain="http://www.czxkpower.com:9090/wechat-cs/sendMessage/send.json"/>
+	<robot name="9091" domain="http://www.czxkpower.com:9091/wechat-cs/sendMessage/send.json"/>
+	<robot name="9092" domain="http://www.czxkpower.com:9092/wechat-cs/sendMessage/send.json"/>
+	<robot name="9093" domain="http://www.czxkpower.com:9093/wechat-cs/sendMessage/send.json"/>
+	<robot name="80" domain="http://www.czxkpower.com/wechat-cs/sendMessage/sendMsgInterface.json"/>
+	<robot name="小i+" domain="http://www.czxkpower.com/wechat-cs/sendMessage/sendMsgInterface.json"/>
+	<robot name="小i（试用）" domain="http://www.czxkpower.com/wechat-cs/sendMessage/sendMsgInterface.json"/>
+	<robot name="小i+（试用）" domain="http://www.czxkpower.com/wechat-cs/sendMessage/sendMsgInterface.json"/>
+	<robot name="小i++（试用）" domain="http://www.czxkpower.com/wechat-cs/sendMessage/sendMsgInterface.json"/>
+	<!-- 9090 铁塔小i(试用) 三星原装微信-->
+	<!-- 9091 铁塔小i iPhone-->
+	<!-- 9092 铁塔小 i+(试用) 三星双开助手-->
+	<!-- 9093 铁塔小i+ 华为机友01 -->
+	<!-- 刘列 铁塔小i+3 华为原装微信 -->
+	
+	<!-- o50AjuGZtbLKo5twrLBTThpYOtdk 赵鹏
+	,o50AjuB8k1odSVfdFfDSabArSlWY 王世修
+	,o50AjuGwAz_mkyVI6xzYiMSRVWGU 陈龙龙
+	,o50AjuG9EsSvkn5zab71gm_K3Ec4 胡总
+	,o50AjuHprCR8v-gWdBdtBmaZpehw 吴宇静
+	,o50AjuD2r2Xyv1tw0fVMDsVATJvA 蒙总
+	,o50AjuHpvj2AFSLG2DjLTBfjsg0Y 秦宜锁
+	,o50AjuC038KHEeNCH6Nz1T2g1RQo 王芳
+	 -->
+
+	<!--
+	<check-robot-status robot-name="9090"	chatroom="机器人测试" user="o50AjuD2r2Xyv1tw0fVMDsVATJvA,o50AjuGZtbLKo5twrLBTThpYOtdk,o50AjuHpvj2AFSLG2DjLTBfjsg0Y,o50AjuHprCR8v-gWdBdtBmaZpehw,o50AjuG9EsSvkn5zab71gm_K3Ec4,o50AjuGwAz_mkyVI6xzYiMSRVWGU,o50AjuB8k1odSVfdFfDSabArSlWY,o50AjuDIqI-AGIK_sjJJAbvBmSXI"/>
+	<check-robot-status robot-name="9093"	chatroom="" user="o50AjuD2r2Xyv1tw0fVMDsVATJvA,o50AjuGZtbLKo5twrLBTThpYOtdk,o50AjuHpvj2AFSLG2DjLTBfjsg0Y,o50AjuHprCR8v-gWdBdtBmaZpehw,o50AjuG9EsSvkn5zab71gm_K3Ec4,o50AjuGwAz_mkyVI6xzYiMSRVWGU,o50AjuB8k1odSVfdFfDSabArSlWY,o50AjuDIqI-AGIK_sjJJAbvBmSXI"/>
+	<check-robot-status robot-name="9092"	chatroom="机器人测试" user="o50AjuD2r2Xyv1tw0fVMDsVATJvA,o50AjuGZtbLKo5twrLBTThpYOtdk,o50AjuHpvj2AFSLG2DjLTBfjsg0Y,o50AjuHprCR8v-gWdBdtBmaZpehw,o50AjuG9EsSvkn5zab71gm_K3Ec4,o50AjuGwAz_mkyVI6xzYiMSRVWGU,o50AjuB8k1odSVfdFfDSabArSlWY,o50AjuDIqI-AGIK_sjJJAbvBmSXI"/>
+	<check-robot-status robot-name="9091"	chatroom="" user="o50AjuD2r2Xyv1tw0fVMDsVATJvA,o50AjuGZtbLKo5twrLBTThpYOtdk,o50AjuHpvj2AFSLG2DjLTBfjsg0Y,o50AjuHprCR8v-gWdBdtBmaZpehw,o50AjuG9EsSvkn5zab71gm_K3Ec4,o50AjuGwAz_mkyVI6xzYiMSRVWGU,o50AjuB8k1odSVfdFfDSabArSlWY,o50AjuDIqI-AGIK_sjJJAbvBmSXI"/>
+	<check-robot-status robot-name="80"	chatroom="" user="o50AjuD2r2Xyv1tw0fVMDsVATJvA,o50AjuGZtbLKo5twrLBTThpYOtdk,o50AjuHpvj2AFSLG2DjLTBfjsg0Y,o50AjuHprCR8v-gWdBdtBmaZpehw,o50AjuG9EsSvkn5zab71gm_K3Ec4,o50AjuGwAz_mkyVI6xzYiMSRVWGU,o50AjuB8k1odSVfdFfDSabArSlWY,o50AjuDIqI-AGIK_sjJJAbvBmSXI"/>
+	-->
+	
+	<level name="发电" chatroom="机器人测试" robot-name="小i+" receive-all="true" sendmsg="true">
+		<level name="保定市" chatroom="^机器人测试$" robot-name="小i（试用）" sendmsg="false">
+			<level name="安新" chatroom="^保定安新动环告警通知$" robot-name="小i+" sendmsg="false"/>
+		</level>
+		<level name="沧州市" chatroom="^沧州铁塔发电管控试点$" robot-name="小i（试用）" sendmsg="false"/>
+		<level name="石家庄市" chatroom="^石家庄铁塔发电管控调度群$" robot-name="小i+" sendmsg="false"/>
+		<level name="北京市"   chatroom="^机器人测试$" robot-name="小i（试用）" sendmsg="false"/>
+		
+		<level name="葫芦岛市" chatroom="^葫芦岛铁塔第一象限$" robot-name="小i（试用）" receive-all="true" sendmsg="false"/>
+		
+		<level name="鹤岗市" chatroom="^爱立信发电通知群$" robot-name="小i（试用）" receive-all="true" sendmsg="false"/>
+		<level name="呼和浩特市" chatroom="^铁塔呼分维护群$" robot-name="小i（试用）" receive-all="true" sendmsg="false"/>
+		<!-- <level name="发电测试" chatroom="^机器人测试$" robot-name="小i（试用）" receive-all="true" sendmsg="true"/> -->
+	</level>
+	
+	<level name="优化建议" chatroom="铁塔项目推动" robot-name="小i（试用）" sendmsg="false"/>
+	
+	<level name="蓄电池整治" chatroom="机器人测试" robot-name="9092" receive-all="false" sendmsg="false">
+		<level name="全国" chatroom="铁塔配电兄弟连" robot-name="9091"  sendmsg="false"/>
+		<level name="重庆市" chatroom="重庆铁塔建维之家" robot-name="9092"  sendmsg="false"/>
+		<level name="黑龙江省" chatroom="龙江铁塔动力配套建设维护群" robot-name="9090"  sendmsg="false"/>
+		<level name="青海省" chatroom="青海铁塔建维群" robot-name="9090"  sendmsg="false"/>
+		<level name="江西省" chatroom="全省-市维护中心群" robot-name="9093"  sendmsg="false"/>
+	</level>
+	
+	<level name="门禁项目建设进度" chatroom="机器人测试" robot-name="小i+（试用）" sendmsg="true">
+		<level name="全国" chatroom="机器人测试" robot-name="小i+（试用）"  sendmsg="true"/>
+	</level>
+	<level name="代维费用" chatroom="机器人测试" robot-name="小i+（试用）" receive-all="false" sendmsg="false">
+		<level name="黑龙江省" chatroom="代维管理" robot-name="小i（试用）"  sendmsg="false"/>
+	</level>
+	
+	<!--  {"10101":"北京","10102":"上海","10103":"天津","10104":"重庆","10105":"黑龙江","10106":"吉林","10107":"辽宁","10108":"内蒙古","10109":"河北","10110":"山西","10111":"陕西","10112":"山东","10113":"新疆","10114":"西藏","10115":"青海","10116":"甘肃","10117":"宁夏","10118":"河南","10119":"江苏","10120":"湖北","10121":"浙江","10122":"安徽","10123":"福建","10124":"江西","10125":"湖南","10126":"贵州","10127":"四川","10128":"广东","10129":"云南","10130":"广西","10131":"海南","10132":"香港","10133":"澳门","10134":"台湾"} -->
+	<level name="天气预警定时群" chatroom="机器人测试" robot-name="小i+（试用）" receive-all="true" sendmsg="true">
+		<level name="全国"  area-name="全国" chatroom="中国铁塔应急保障群" robot-name="小i+" sendmsg="true"/>
+<level name="10102" area-name="上海" chatroom="上海应急保障协同体" robot-name="小i+（试用）" sendmsg="true"/>
+<level name="10101" area-name="北京" chatroom="^北京铁塔小i试用$" robot-name="小i（试用）" sendmsg="true"/>
+		<level name="10102" area-name="上海" chatroom="上海应急保障协同体" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10102" area-name="上海" chatroom="上海铁塔应急通信保障办公室" robot-name="小i+" sendmsg="true"/>
+		<level name="10104" area-name="重庆" chatroom="重庆铁塔应急保障联络群" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10104" area-name="重庆" chatroom="重庆铁塔运维管理群" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10105" area-name="黑龙江" chatroom="黑龙江铁塔建维" robot-name="小i（试用）" receive-all="true" sendmsg="true"/>
+		<level name="1010509" area-name="大庆" chatroom="大庆代维公司工作群（铁塔）" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10106" area-name="吉林" chatroom="^吉林省铁塔应急保障群$" robot-name="小i+" sendmsg="true"/>
+		<level name="10107" area-name="辽宁" chatroom="辽宁铁塔●应急保障联络群" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10108" area-name="内蒙古" chatroom="^内蒙铁塔应急发电群$" robot-name="小i+" sendmsg="true"/>
+		<level name="1010807" area-name="鄂尔多斯" chatroom="^鄂尔多斯应急发电群$" robot-name="小i+" sendmsg="true"/>
+		<level name="10109" area-name="河北" chatroom="河北铁塔应急通信保障" robot-name="小i（试用）" sendmsg="true"/>
+		<level name="1010901" area-name="石家庄" chatroom="^石家庄铁塔发电管控调度群$" robot-name="小i+" sendmsg="true"/>
+		<level name="1010905" area-name="唐山" chatroom="^唐山铁塔小i支撑群$" robot-name="小i+" sendmsg="false"/>
+		<level name="1010911" area-name="秦皇岛" chatroom="秦皇岛铁塔公司建维工作组" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10112" area-name="山东" chatroom="山东铁塔应急通信工作群" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="1011206" area-name="潍坊" chatroom="潍坊铁塔维护群" robot-name="小i（试用）" sendmsg="true"/>
+		<level name="10113" area-name="新疆" chatroom="新疆铁塔应急交流" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10116" area-name="甘肃" chatroom="^甘肃铁塔应急保障群$" robot-name="小i+" sendmsg="true"/>
+		<level name="10118" area-name="河南" chatroom="^河南铁塔应急保障$" robot-name="小i+（试用）" sendmsg="true"/>
+		<level name="10119" area-name="江苏" chatroom="^江苏铁塔调度群$" robot-name="小i+" sendmsg="true"/>
+		<level name="10120" area-name="湖北" chatroom="^湖北铁塔应急响应群$" robot-name="小i+" sendmsg="false"/>
+		<level name="10122" area-name="安徽" chatroom="^安徽铁塔维护应急群$" robot-name="小i+（试用）" sendmsg="false"/>
+		<level name="10123" area-name="福建" chatroom="FJTT运维群" robot-name="小i+（试用）" sendmsg="false"/>
+		<level name="10124" area-name="江西" chatroom="^江西动环项目组$" robot-name="小i+" sendmsg="false"/>
+		<level name="10125" area-name="湖南" chatroom="湖南铁塔维护创新工作群" robot-name="小i（试用）" sendmsg="false"/>
+		<level name="1012511" area-name="张家界" chatroom="张家界铁塔基站维护调度群" robot-name="小i+（试用）" sendmsg="false"/>
+		<level name="10128" area-name="广东" chatroom="^广东铁塔应急工作群$" robot-name="小i+" sendmsg="false"/>
+		<level name="10128" area-name="广东" chatroom="广东铁塔应急通信信息通报群" robot-name="小i（试用）" sendmsg="false"/>
+		<level name="10130" area-name="广西" chatroom="广西铁塔应急保障群" robot-name="小i+" sendmsg="false"/>
+	</level>
+	<level name="天气预警" chatroom="机器人测试" robot-name="小i+（试用）" receive-all="false" sendmsg="false">
+		<level name="全国" chatroom="中国铁塔应急保障群" robot-name="小i+" sendmsg="false"/>
+		<level name="红色" chatroom="机器人测试" robot-name="小i+（试用）" receive-all="false" sendmsg="false">
+			<level name="10102" chatroom="上海铁塔应急通信保障办公室" robot-name="小i+" sendmsg="false"/>
+<level name="10101"  chatroom="^北京铁塔小i试用$" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="10102" chatroom="上海应急保障协同体" robot-name="9092" sendmsg="false"/>
+			<level name="10104" chatroom="重庆铁塔应急保障联络群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10104" chatroom="重庆铁塔运维管理群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10105" chatroom="黑龙江铁塔建维" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="1010509" chatroom="大庆代维公司工作群（铁塔）" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10106" chatroom="^吉林省铁塔应急保障群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10107" chatroom="辽宁铁塔●应急保障联络群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10109" chatroom="河北铁塔应急通信保障" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="1010901" chatroom="^石家庄铁塔发电管控调度群$" robot-name="小i+" sendmsg="false"/>
+			<level name="1010905" chatroom="^唐山铁塔小i支撑群$" robot-name="小i+" sendmsg="false"/>
+			<level name="1010911" chatroom="秦皇岛铁塔公司建维工作组" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10108" chatroom="^内蒙铁塔应急发电群$" robot-name="小i+" sendmsg="false"/>
+			<level name="1010807" chatroom="^鄂尔多斯应急发电群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10112" chatroom="山东铁塔应急通信工作群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="1011206" chatroom="潍坊铁塔维护群" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="10113" chatroom="新疆铁塔应急交流" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10116" chatroom="^甘肃铁塔应急保障群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10118" chatroom="^河南铁塔应急保障$" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10119" chatroom="^江苏铁塔调度群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10120" chatroom="^湖北铁塔应急响应群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10122" chatroom="^安徽铁塔维护应急群$" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10123" chatroom="福建铁塔全省建维群" robot-name="9092" sendmsg="false"/>
+			<level name="10123" chatroom="FJTT运维群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10124" chatroom="^江西动环项目组$" robot-name="小i+" sendmsg="false"/>
+			<level name="10125" chatroom="湖南铁塔维护创新工作群" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="1012511" chatroom="张家界铁塔基站维护调度群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10128" chatroom="^广东铁塔应急工作群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10128" chatroom="广东铁塔应急通信信息通报群" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="10130" chatroom="广西铁塔应急保障群" robot-name="小i+" sendmsg="false"/>
+		</level>
+		<level name="橙色" chatroom="机器人测试" robot-name="小i+（试用）" receive-all="false" sendmsg="true">
+			<level name="10102" chatroom="上海铁塔应急通信保障办公室" robot-name="小i+" sendmsg="false"/>
+<level name="10101"  chatroom="^北京铁塔小i试用$" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="10102" chatroom="上海应急保障协同体" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10104" chatroom="重庆铁塔应急保障联络群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10104" chatroom="重庆铁塔运维管理群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10105" chatroom="黑龙江铁塔建维" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="1010509" chatroom="大庆代维公司工作群（铁塔）" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10106" chatroom="^吉林省铁塔应急保障群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10107" chatroom="辽宁铁塔●应急保障联络群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10109" chatroom="河北铁塔应急通信保障" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="1010901" chatroom="^石家庄铁塔发电管控调度群$" robot-name="小i+" sendmsg="false"/>
+			<level name="1010905" chatroom="^唐山铁塔小i支撑群$" robot-name="小i+" sendmsg="false"/>
+			<level name="1010911" chatroom="秦皇岛铁塔公司建维工作组" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10108" chatroom="^内蒙铁塔应急发电群$" robot-name="小i+" sendmsg="false"/>
+			<level name="1010807" chatroom="^鄂尔多斯应急发电群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10112" chatroom="山东铁塔应急通信工作群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="1011206" chatroom="潍坊铁塔维护群" robot-name="小i（试用）" sendmsg="false"/>
+			<!--<level name="1011203" chatroom="淄博铁塔维护群" robot-name="9090" sendmsg="false"/>-->
+			<level name="10113" chatroom="新疆铁塔应急交流" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10116" chatroom="^甘肃铁塔应急保障群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10118" chatroom="^河南铁塔应急保障$" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10119" chatroom="^江苏铁塔调度群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10120" chatroom="^湖北铁塔应急响应群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10122" chatroom="^安徽铁塔维护应急群$" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10123" chatroom="FJTT运维群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10124" chatroom="^江西动环项目组$" robot-name="小i+" sendmsg="false"/>
+			<level name="10125" chatroom="湖南铁塔维护创新工作群" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="1012511" chatroom="张家界铁塔基站维护调度群" robot-name="小i+（试用）" sendmsg="false"/>
+			<level name="10128" chatroom="^广东铁塔应急工作群$" robot-name="小i+" sendmsg="false"/>
+			<level name="10128" chatroom="广东铁塔应急通信信息通报群" robot-name="小i（试用）" sendmsg="false"/>
+			<level name="10130" chatroom="广西铁塔应急保障群" robot-name="小i+" sendmsg="false"/>
+		</level>
+		<level name="黄色" chatroom="机器人测试" robot-name="小i+" receive-all="false" sendmsg="false">
+		</level>
+		<level name="蓝色" chatroom="机器人测试" robot-name="小i+" receive-all="false" sendmsg="false">
+		</level>
+	</level>
+	<level name="公告" chatroom="^机器人测试$"  robot-name="小i+" receive-all="true" sendmsg="false">
+		<level name="机器人测试" chatroom="^机器人测试$" robot-name="小i+"  sendmsg="false"/>
+		<level name="唐山铁塔小i支撑群" chatroom="^唐山铁塔小i支撑群$" robot-name="小i+"  sendmsg="false"/>
+		<level name="石家庄铁塔发电管控调度群" chatroom="^石家庄铁塔发电管控调度群$" robot-name="小i+"  sendmsg="false"/>
+		<level name="快乐维护-上海铁塔应急保障办公室" chatroom="^快乐维护-上海铁塔应急保障办公室$" robot-name="小i+"  sendmsg="false"/>
+		<level name="宁夏故障处理督办管控群" chatroom="^宁夏故障处理督办管控群$" robot-name="小i+"  sendmsg="false"/>
+		<level name="上海公告测试群" chatroom="^上海公告测试群$" robot-name="小i+"  sendmsg="false"/>
+        <level name="小二班-清华15MBA" chatroom="^小二班-清华15MBA$" robot-name="小i+（使用）"  sendmsg="false"/>
+        <level name="第一象限运维北京铁塔" chatroom="^第一象限运维北京铁塔$" robot-name="小i（试用）"  sendmsg="false"/>
+	</level>
+
+	<proclamation name="机器人测试" chatroom="机器人测试" sendmsg="true">
+		<proclamation content="高断站TOP 10基站详情&#x000A;{url}&#x000A;已解决超频断站站{0}座,超时断站站{1}座" url="fourHight/highBreakStationTS" rate="week"/>
+		<proclamation content="高发电TOP 10基站详情&#x000A;{url}&#x000A;已解决超频发电站{0}座,超时发电站{1}座" url="fourHight/highGenerationTS"  rate="week"/>
+		<proclamation content="高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座,超时高温站{1}座" url="fourHight/highTemperatureTS" rate="week"/>
+	</proclamation>
+	<proclamation name="唐山铁塔小i支撑群" chatroom="唐山铁塔小i支撑群" sendmsg="false">
+		<proclamation province="河北" rate="week"   content="高断站TOP 10基站详情&#x000A;{url}&#x000A;已解决超频发电站{0}座,超时发电站{1}座" url="fourHight/highBreakStationTS" />
+		<proclamation province="河北" rate="week"   content="高发电TOP 10基站详情&#x000A;{url}&#x000A;已解决超频断站站{0}座,超时断站站{1}座" url="fourHight/highGenerationTS" />
+		<proclamation province="河北" rate="week"   content="高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座,超时高温站{1}座" url="fourHight/highTemperature" />
+	</proclamation>
+        <proclamation name="第一象限运维北京铁塔" chatroom="第一象限运维北京铁塔" sendmsg="false">
+		<proclamation province="北京" rate="week"   content="高断站TOP 10基站详情&#x000A;{url}&#x000A;已解决超频发电站{0}座,超时发电站{1}座" url="fourHight/highBreakStationTS" />
+		<proclamation province="北京" rate="week"   content="高发电TOP 10基站详情&#x000A;{url}&#x000A;已解决超频断站站{0}座,超时断站站{1}座" url="fourHight/highGenerationTS" />
+		<proclamation province="北京" rate="week"  content="高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+	</proclamation>
+	<proclamation name="石家庄铁塔发电管控调度群" chatroom="石家庄铁塔发电管控调度群" sendmsg="false">
+		<proclamation province="河北" rate="day"	content="高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+		<proclamation province="河北" rate="week"	content="高断站TOP 10基站详情&#x000A;{url}&#x000A;已解决超频发电站{0}座,超时发电站{1}座" url="fourHight/highBreakStationTS" />
+		<proclamation province="河北" rate="week"	content="高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座,超时高温站{1}座" url="fourHight/highTemperature" />
+	</proclamation>
+	<proclamation name="快乐维护-上海铁塔应急保障办公室" chatroom="快乐维护-上海铁塔应急保障办公室" sendmsg="false">
+		<proclamation province="上海市" rate="day" content="高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+		<proclamation province="上海市" rate="week"  content="高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座，超时高温站{1}座" url="fourHight/highTemperature" />
+		<proclamation province="上海市" rate="week" content="高电量TOP 10基站详情&#x000A;{url}&#x000A;已解决{0}座" url="fourHight/highPower" />
+	</proclamation>
+	<proclamation name="宁夏故障处理督办管控群" chatroom="宁夏故障处理督办管控群" sendmsg="false">
+		<proclamation province="宁夏" rate="week"  content="高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+		<proclamation province="宁夏" rate="week"  content="超时工单排名统计详情&#x000A;{url}" url="fourHight/highBillTimeOut" />
+		<proclamation province="宁夏" rate="week"  content="高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座，超时高温站{1}座" url="fourHight/highTemperature" />
+		<proclamation province="宁夏" rate="week"  content="高电量TOP 10基站详情&#x000A;{url}&#x000A;已解决{0}座" url="fourHight/highPower" />
+	</proclamation>
+	<proclamation name="上海公告测试群" chatroom="上海公告测试群" sendmsg="false">
+		<proclamation province="上海市" rate="day" content="上海市 高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+		<proclamation province="上海市" rate="week"  content="上海市 高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座，超时高温站{1}座" url="fourHight/highTemperature" />
+		<proclamation province="上海市" rate="week"  content="上海市 高电量TOP 10基站详情&#x000A;{url}&#x000A;已解决{0}座&#x000A;" url="fourHight/highPower" />
+		<proclamation province="河北" rate="week"  content="唐山 高断站TOP 10基站详情&#x000A;{url}&#x000A;已解决超频发电站{0}座,超时发电站{1}座" url="fourHight/highBreakStationTS" />
+		<proclamation province="河北" rate="week"   content="唐山 高发电TOP 10基站详情&#x000A;{url}&#x000A;已解决超频断站站{0}座,超时断站站{1}座" url="fourHight/highGenerationTS" />
+		<proclamation province="河北" rate="week"  content="唐山 高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座,超时高温站{1}座" url="fourHight/highTemperature" />
+		<proclamation province="河北" rate="day"	content="石家庄 高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+		<proclamation province="河北" rate="week"	content="石家庄 高断站TOP 10基站详情&#x000A;{url}&#x000A;已解决超频发电站{0}座,超时发电站{1}座" url="fourHight/highBreakStationTS" />
+		<proclamation province="河北" rate="week"	content="石家庄 高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座,超时高温站{1}座" url="fourHight/highTemperature" />
+		<proclamation province="宁夏" rate="week"  content="宁夏 高离线TOP 10基站详情&#x000A;{url}&#x000A;已解决超频离线站{0}座,超时离线站{1}座" url="fourHight/highFSUOffLine" />
+		<proclamation province="宁夏" rate="week"  content="宁夏 超时工单排名统计详情&#x000A;{url}" url="fourHight/highBillTimeOut" />
+		<proclamation province="宁夏" rate="week"  content="宁夏 高高温TOP 10基站详情&#x000A;{url}&#x000A;已解决超频高温站{0}座，超时高温站{1}座" url="fourHight/highTemperature" />
+		<proclamation province="宁夏" rate="week"  content="宁夏 高电量TOP 10基站详情&#x000A;{url}&#x000A;已解决{0}座" url="fourHight/highPower" />
+	</proclamation>
+	<weatherSendTime>30</weatherSendTime>
+</mapper>

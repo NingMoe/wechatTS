@@ -1,0 +1,25 @@
+CACHE MANIFEST
+http://code.jquery.com/jquery-1.11.1.min.js
+http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js
+http://res.wx.qq.com/open/js/jweixin-1.0.0.js
+http://developer.baidu.com/map/jsdemo/demo/convertor.js
+http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css
+./css/amaze.min.css
+./i/addPhoto.png
+./i/app-icos.png
+./i/waitUpload.png
+./i/noPhoto.png
+./i/5050.png
+./i/voice.png
+./js/echo.min.js
+./js/amazeui.switch.min.js
+./js/uuid.js
+./css/app.css
+./css/amazeui.switch.css
+./mobiscroll/mobiscroll.custom-2.5.2.min.css
+./mobiscroll/mobiscroll.custom-2.5.2.min.js
+./mobiscroll/mobiscroll.core-2.5.2-zh.js
+./mobiscroll/mobiscroll.datetime-2.5.1-zh.js
+NETWORK:
+./js/wechatApp.js
+FALLBACK:

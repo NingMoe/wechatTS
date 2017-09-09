@@ -1,0 +1,297 @@
+.am-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1110;
+  background: #fff;
+  display: none;
+  overflow: hidden;
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.am-popup.am-modal-active,
+.am-popup.am-modal-out {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.am-popup.am-modal-active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.am-popup.am-modal-out {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+@media all and (min-width: 630px) and (min-height: 630px) {
+  .am-popup {
+    width: 630px;
+    height: 630px;
+    left: 50%;
+    top: 50%;
+    margin-left: -315px;
+    margin-top: -315px;
+    -webkit-transform: translateX(1024px);
+        -ms-transform: translateX(1024px);
+            transform: translateX(1024px);
+  }
+  .am-popup.am-modal-active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .am-popup.am-modal-out {
+    -webkit-transform: translateX(1024px);
+        -ms-transform: translateX(1024px);
+            transform: translateX(1024px);
+  }
+}
+.am-popup-inner {
+  padding-top: 44px;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.am-popup-hd {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 43px;
+  border-bottom: 1px solid #dedede;
+  background-color: #fff;
+}
+.am-popup-hd .am-popup-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 43px;
+  text-align: center;
+  margin: 0 30px;
+  color: #333333;
+  display: block;
+  word-wrap: normal;
+  /* for IE */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.am-popup-hd .am-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  color: #999999;
+}
+.am-popup-hd .am-close:hover {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #555555;
+}
+.am-popup-bd {
+  padding: 15px;
+  background: #f8f8f8;
+  color: #555555;
+}
+/* Write your styles */
+body{
+	background-color: #EDEEEF;
+	font-weight:normal;
+	color: #3C3C3C;
+	font-size: 14px;
+	height: 100%;
+}
+.app-div-center{
+	text-align: center;
+	vertical-align: middle;
+}
+.app-margin-top-2{
+	margin-top: 2px;
+}
+.app-margin-top-10{
+	margin-top: 10px;
+}
+.app-div-btn-tool{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.app-td-style1{
+	vertical-align: middle;
+}
+.app-tab li{
+	float:left;
+	list-style-type:none;
+}
+.app-hidden{
+	display:none;
+}
+.app-tabs-selected{
+	background-color:#E6E6E6 !important;
+}
+
+.app-tb{
+	background-color: white;
+	border-bottom: 1px #ddd solid;
+}
+.app-tb-td{
+	height: 40px;
+}
+
+.app-gird{
+	background-color: white;
+}
+.app-toolbar{
+	font-weight:normal;
+	color: #3C3C3C;
+	font-size: 16px;
+}
+.app-btn-icon{
+	height: 35px;
+	width: 30px;
+}
+.app-from-page {
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.app-transform-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #EDEEEF;
+	-webkit-transform: translate(100%, 0);
+	-ms-transform: translate(100%, 0);
+	transform: translate(100%, 0);
+}
+.app-from-transform-page {
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+/* 锟斤拷透锟斤拷锟斤拷锟斤拷植锟�*/
+#overlay {
+    background: #000;
+    filter: alpha(opacity=50); /* IE锟斤拷透锟斤拷锟�*/
+    opacity: 0.5;  /* 透锟斤拷锟�*/
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100; /* 锟剿达拷锟斤拷图锟斤拷要锟斤拷锟斤拷页锟斤拷 */
+    display:none;
+}
+.app-container {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.app-td-top-noborder{
+	border-top: none;
+}
+
+.app-noborder-bottom{
+	border-bottom: none;
+}
+
+.app-border-all-red{
+	border:3px solid red;
+}
+.app-border-left-black{
+	border-left:1px solid black;
+}
+.app-border-right-black{
+	border-right:1px solid black;
+}
+.app-border-top-black{
+	border-top:1px solid black;
+}
+.app-border-bottom-black{
+	border-bottom:1px solid black;
+}
+.app-line-height-32{
+	line-height: 32px;
+}
+
+.app-btn1{
+	background:url(../i/app-icos.png) no-repeat 0px 0px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn2{
+	background:url(../i/app-icos.png) no-repeat -30px 0px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn3{
+	background:url(../i/app-icos.png) no-repeat -0px -30px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn4{
+	background:url(../i/app-icos.png) no-repeat -30px -30px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn5{
+	background:url(../i/app-icos.png) no-repeat 0px -60px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn6{
+	background:url(../i/app-icos.png) no-repeat -30px -60px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn7{
+	background:url(../i/app-icos.png) no-repeat 0px -90px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-btn8{
+	background:url(../i/app-icos.png) no-repeat -40px -120px;
+	background-size:200%;
+	width: 30px;
+	height: 30px;
+}
+.app-add-photo{
+	background:url(../i/addPhoto.png) no-repeat;
+	width: 78px;
+	height: 78px;
+	border:none;
+}
+.app-uploding{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:20000;
+	color: #FFF;
+	opacity:0.6; 
+	filter: alpha(opacity=60); 
+	background-color:#000;
+}
+.app-addphoto-webuploderbtn{
+	background: #FFFFFF;
+	padding: 0px;
+}

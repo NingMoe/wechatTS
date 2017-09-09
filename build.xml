@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 定义一个工程，默认任务为warFile。 -->
+<project name="wechat" default="warFile" basedir=".">
+    <!-- 定义属性，打成war包的名称。 -->
+	<property name="dist.dir" value="${basedir}/dist" />
+    <property name="webapp.name" value="wechat" />  
+    <property name="src.dir" value="${basedir}/src" />  
+    <property name="config.dir" value="${basedir}/resources" />  
+	<property name="webRoot.dir" value="${basedir}/webapp" />
+    <property name="lib.dir" value="${webRoot.dir}/WEB-INF/lib" />
+	<property name="tomcat.home" value="D:\Program Files\apache-tomcat-6.0.36" />
+    <property name="build.dir" value="${basedir}/build" />  
+    
+    <!-- 定义路径，编译java文件时用到的jar包。 -->
+    <path id="project.classpath">
+    	 <fileset dir="${lib.dir}">
+	        <include name="**/*.jar" />
+	    </fileset>
+    	<fileset dir="${tomcat.home}">
+    		<include name="**/*.jar" />
+    	</fileset>
+    </path>
+    
+    <!-- 定义任务，清空任务：清空原有的class文件，创建新的build路径。 -->
+    <target name="clean">
+    	<delete dir="${build.dir}" />
+    	<delete dir="${dist.dir}" />
+    </target>
+    
+	<!-- 创建目录结构 -->  
+    <target name="init" depends="clean" description="创建初始化目录结构">  
+    	<mkdir dir="${build.dir}/classes" />  
+    	<mkdir dir="${dist.dir}" />
+    </target>
+	
+	<!-- 编译java -->  
+    <target name="compile" depends="init" description="编译java文件">
+        <echo message="begin compile..." />
+        <javac srcdir="${src.dir}" destdir="${build.dir}/classes"
+        	includeantruntime="no" encoding="UTF-8" nowarn="on"
+        	source="1.6" target="1.6">
+        	<classpath refid="project.classpath" />
+        	<compilerarg line="-Xlint:unchecked"  value="-XDignore.symbol.file" />
+        </javac>  
+        <copy todir="${build.dir}/classes">  
+            <fileset dir="${config.dir}">  
+                <include name="**/*.*" />  
+            </fileset>  
+        </copy>
+        <echo message="end compile..." />  
+    </target>
+	
+    <!-- 将class文件打成 jar包 -->  
+    <target name="pack" depends="compile">   
+        <jar jarfile="${dist.dir}/firstq-${webapp.name}.jar">   
+            <fileset dir="${build.dir}/classes">   
+                <include name="**/*.class"/>
+            </fileset>   
+        </jar> 
+    	<delete>
+			<fileset dir="${build.dir}/classes">
+			    <include name="**/*.class"/>
+			</fileset>
+		</delete>
+
+    </target>   
+	
+	<!-- 打成war包, 名称默认为 项目名 -->  
+    <target name="warFile" depends="pack" description="将工程打成war包">  
+        <echo message="begin war..." />  
+    	<war destfile="${dist.dir}/${webapp.name}.war" basedir="${webRoot.dir}"  webxml="${webRoot.dir}/WEB-INF/web.xml">  
+		<classes dir="${build.dir}/classes" >
+        	 <include name="**/*.xml"/>
+        	 <include name="**/*.properties"/>
+			 <include name="**/*.xls"/>
+			 <include name="**/*.xlsx"/>
+			 <include name="**/*.ftl"/>
+		</classes>
+        </war>  
+        <echo message="end war..." />  
+    </target>  
+</project>
